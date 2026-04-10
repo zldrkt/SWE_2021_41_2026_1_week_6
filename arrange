@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for i in {a..z}
+do
+    mv files/${i}* files/${i^^}* $i/ 2>/dev/null
+done
